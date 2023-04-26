@@ -19,7 +19,7 @@ public class CurrencyController {
 
     private final CentralRussianBankService centralRussianBankService;
 
-    @PostMapping("/getCurrencies")
+    @GetMapping("/getCurrencies")
     public List<ValuteCursOnDate> getValuteCursOnDate() throws Exception {
         return centralRussianBankService.getCurrenciesFromCbr();
     }
